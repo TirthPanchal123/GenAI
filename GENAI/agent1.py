@@ -14,6 +14,7 @@ def get_weather(city: str):
     
     return response.json()['current_condition'][0]["FeelsLikeC"]
 
+
 client = ChatOpenAI(
     model="gpt-3.5-turbo",
     api_key= os.getenv('OPENAI_API_KEY')

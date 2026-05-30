@@ -34,7 +34,7 @@ collection = db["CSE"]
 for doc in docs:
     embedding = embeddings.embed_query(doc.page_content)
     document_data={
-        "content": doc.page_content,
+        "text": doc.page_content,
         "embedding" : embedding
     }
     collection.insert_one(document_data)
