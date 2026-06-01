@@ -14,7 +14,7 @@ documents = loader.load()
 
 text_splitter= RecursiveCharacterTextSplitter(
     chunk_size=500,
-    chunk_overlap=100
+    chunk_overlap=100               
 )
 
 docs = text_splitter.split_documents(documents)

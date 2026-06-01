@@ -46,3 +46,4 @@ def ingest_pdf_to_mongodb(pdf_path):
 
 # Function Call
 ingest_pdf_to_mongodb("3skills.pdf")
+
